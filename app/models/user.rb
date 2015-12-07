@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :plan
   attr_accessor :stripe_card_token
-end
+
 
   def save_with_payment
     if valid?
@@ -13,4 +13,5 @@ end
       self.stripe_customer_token = customer.id
       save!
     end
+  end
 end
