@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
+     Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
     
     $("#form-submit-btn").click(function(event){
         event.preventDefault();
@@ -28,7 +28,7 @@ $(document).ready(function(){
         
         var token = response.id;
         
-        f.append('<input type = "hidden" name="user[stripe_card_token]" value="'+token+'"/>');
+        f.append('<input type = "hidden" name="user[stripe_card_token]" value="' + token + '"/>');
         
         f.get(0).submit();
     }
