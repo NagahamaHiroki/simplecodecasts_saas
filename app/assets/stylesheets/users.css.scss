@@ -34,7 +34,20 @@
 
 }
 
-.avatar{
+.user-show.avatar{
     border-radius: 50%;
    
+}
+
+.user-show{
+    height: 128px;
+    width: 128px;
+}
+
+.well.white-bg{
+    backgorund-color: white;
+}
+
+.user-index-avatar{
+    border-radius: 50%;
 }
